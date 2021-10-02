@@ -2,7 +2,7 @@
 
 
 var trial = function() {
-	
+
 	$.ajax({
 		dataType: "JSON", 
 		url: "https://fakestoreapi.com/products",
@@ -21,37 +21,37 @@ var trial = function() {
 			$("#img-1").attr("src", response[i].image);
 			$("#title-1").html(response[i].title);
 			$("#price-1").html("Rs. " + response[i].price);
-			$("#Cart-1").css("display", "block");
+			// $("#Cart-1").css("display", "block");
 			
 			$("#img-2").css("display", "block");
 			$("#img-2").attr("src", response[i+1].image);
 			$("#title-2").html(response[i+1].title)
 			$("#price-2").html("Rs. " + response[i+1].price);
-			$("#Cart-2").css("display", "block");
+			// $("#Cart-2").css("display", "block");
 			
 			$("#img-3").css("display", "block");
 			$("#img-3").attr("src", response[i+2].image);
 			$("#title-3").html(response[i+2].title)
 			$("#price-3").html("Rs. " + response[i+2].price);
-			$("#Cart-3").css("display", "block");
+			// $("#Cart-3").css("display", "block");
 			
 			$("#img-4").css("display", "block");
 			$("#img-4").attr("src", response[i+3].image);
 			$("#title-4").html(response[i+3].title)
 			$("#price-4").html("Rs. " + response[i+3].price);
-			$("#Cart-4").css("display", "block");
+			// $("#Cart-4").css("display", "block");
 			
 			$("#img-5").css("display", "block");
 			$("#img-5").attr("src", response[i+4].image);
 			$("#title-5").html(response[i+4].title)
 			$("#price-5").html("Rs. " + response[i+4].price);
-			$("#Cart-5").css("display", "block");
+			// $("#Cart-5").css("display", "block");
 			
 			$("#img-6").css("display", "block");
 			$("#img-6").attr("src", response[i+5].image);
 			$("#title-6").html(response[i+5].title)
 			$("#price-6").html("Rs. " + response[i+5].price);
-			$("#Cart-6").css("display", "block");
+			// $("#Cart-6").css("display", "block");
 
 			$("#slide-1").attr("src", response[i+6].image);
 			$("#slide-1-heading").html(response[i+6].title);
@@ -80,12 +80,12 @@ var showLoad = function() {
 	$("#img-5").css("display", "none");
 	$("#img-6").css("display", "none");
 	$("#slide-1").css("display", "none");
-	$("#Cart-1").css("display", "none");
-	$("#Cart-2").css("display", "none");
-	$("#Cart-3").css("display", "none");
-	$("#Cart-4").css("display", "none");
-	$("#Cart-5").css("display", "none");
-	$("#Cart-6").css("display", "none");
+	// $("#Cart-1").css("display", "none");
+	// $("#Cart-2").css("display", "none");
+	// $("#Cart-3").css("display", "none");
+	// $("#Cart-4").css("display", "none");
+	// $("#Cart-5").css("display", "none");
+	// $("#Cart-6").css("display", "none");
 	$("#loading").html("Loading");
 
 	$("#navigate").css("display", "none");
@@ -96,4 +96,52 @@ var showLoad = function() {
 	
 $(document).ready(function() {
 	trial();
+	$("#box-1").hover(function() {
+		$("#Cart-1").css("visibility", "visible");
+		$("#Cart-1").css("opacity", "1");
+	}, function() {
+		$("#Cart-1").css("visibility", "hidden");
+		$("#Cart-1").css("opacity", "0");
+	});
+
+	$("#box-2").hover(function() {
+		$("#Cart-2").css("visibility", "visible");
+		$("#Cart-2").css("opacity", "1");
+	}, function() {
+		$("#Cart-2").css("visibility", "hidden");
+		$("#Cart-2").css("opacity", "0");
+	});
+
+	$("#box-3").hover(function() {
+		$("#Cart-3").css("visibility", "visible");
+		$("#Cart-3").css("opacity", "1");
+	}, function() {
+		$("#Cart-3").css("visibility", "hidden");
+		$("#Cart-3").css("opacity", "0");
+	});
+
+	$("#box-4").hover(function() {
+		$("#Cart-4").css("visibility", "visible");
+		$("#Cart-4").css("opacity", "1");
+	}, function() {
+		$("#Cart-4").css("visibility", "hidden");
+		$("#Cart-4").css("opacity", "0");
+	});
+
+	$("#box-5").hover(function() {
+		$("#Cart-5").css("visibility", "visible");
+		$("#Cart-5").css("opacity", "1");
+	}, function() {
+		$("#Cart-5").css("visibility", "hidden");
+		$("#Cart-5").css("opacity", "0");
+	});
+
+	$("#box-6").hover(function() {
+		$("#Cart-6").css("visibility", "visible");
+		$("#Cart-6").css("opacity", "1");
+	}, function() {
+		$("#Cart-6").css("visibility", "hidden");
+		$("#Cart-6").css("opacity", "0");
+	});
+
 });

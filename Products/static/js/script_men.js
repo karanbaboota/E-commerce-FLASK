@@ -66,15 +66,17 @@ var showLoad = function() {
 	$("#img-4").css("display", "none");
 	$("#img-5").css("display", "none");
 	$("#img-6").css("display", "none");
+
 	$("#slide-1").css("display", "none");
+
 	$("#Cart-1").css("display", "none");
 	$("#Cart-2").css("display", "none");
 	$("#Cart-3").css("display", "none");
 	$("#Cart-4").css("display", "none");
 	$("#Cart-5").css("display", "none");
 	$("#Cart-6").css("display", "none");
-	$("#loading").html("Loading");
 
+	$("#loading").html("Loading");
 	$("#navigate").css("display", "none");
 	$("#navigate-n").css("display", "none");
 	$(".card").css("display", "none");
@@ -83,4 +85,51 @@ var showLoad = function() {
 	
 $(document).ready(function() {
 	trial();
+	$("#box-1").hover(function() {
+		$("#Cart-1").css("visibility", "visible");
+		$("#Cart-1").css("opacity", "1");
+	}, function() {
+		$("#Cart-1").css("visibility", "hidden");
+		$("#Cart-1").css("opacity", "0");
+	});
+
+	$("#box-2").hover(function() {
+		$("#Cart-2").css("visibility", "visible");
+		$("#Cart-2").css("opacity", "1");
+	}, function() {
+		$("#Cart-2").css("visibility", "hidden");
+		$("#Cart-2").css("opacity", "0");
+	});
+
+	$("#box-3").hover(function() {
+		$("#Cart-3").css("visibility", "visible");
+		$("#Cart-3").css("opacity", "1");
+	}, function() {
+		$("#Cart-3").css("visibility", "hidden");
+		$("#Cart-3").css("opacity", "0");
+	});
+
+	$("#box-4").hover(function() {
+		$("#Cart-4").css("visibility", "visible");
+		$("#Cart-4").css("opacity", "1");
+	}, function() {
+		$("#Cart-4").css("visibility", "hidden");
+		$("#Cart-4").css("opacity", "0");
+	});
+
+	$("#box-5").hover(function() {
+		$("#Cart-5").css("visibility", "visible");
+		$("#Cart-5").css("opacity", "1");
+	}, function() {
+		$("#Cart-5").css("visibility", "hidden");
+		$("#Cart-5").css("opacity", "0");
+	});
+
+	$("#box-6").hover(function() {
+		$("#Cart-6").css("visibility", "visible");
+		$("#Cart-6").css("opacity", "1");
+	}, function() {
+		$("#Cart-6").css("visibility", "hidden");
+		$("#Cart-6").css("opacity", "0");
+	});
 });

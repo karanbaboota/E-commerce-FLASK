@@ -69,8 +69,18 @@
 		.5em 0 0 black;
 	}}
 
-  
+#box-1, #box-2, #box-3, #box-4, #box-5, #box-6
+{
+	opacity: 0.95;
+	cursor: pointer;
+}
   
 
+#Cart-1, #Cart-2, #Cart-3, #Cart-4, #Cart-5, #Cart-6
+{
+	visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
 
 

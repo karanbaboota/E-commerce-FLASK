@@ -97,4 +97,52 @@ var showLoad = function() {
 	
 $(document).ready(function() {
 	trial();
+	$("#box-1").hover(function() {
+		$("#Cart-1").css("visibility", "visible");
+		$("#Cart-1").css("opacity", "1");
+	}, function() {
+		$("#Cart-1").css("visibility", "hidden");
+		$("#Cart-1").css("opacity", "0");
+	});
+
+	$("#box-2").hover(function() {
+		$("#Cart-2").css("visibility", "visible");
+		$("#Cart-2").css("opacity", "1");
+	}, function() {
+		$("#Cart-2").css("visibility", "hidden");
+		$("#Cart-2").css("opacity", "0");
+	});
+
+	$("#box-3").hover(function() {
+		$("#Cart-3").css("visibility", "visible");
+		$("#Cart-3").css("opacity", "1");
+	}, function() {
+		$("#Cart-3").css("visibility", "hidden");
+		$("#Cart-3").css("opacity", "0");
+	});
+
+	$("#box-4").hover(function() {
+		$("#Cart-4").css("visibility", "visible");
+		$("#Cart-4").css("opacity", "1");
+	}, function() {
+		$("#Cart-4").css("visibility", "hidden");
+		$("#Cart-4").css("opacity", "0");
+	});
+
+	$("#box-5").hover(function() {
+		$("#Cart-5").css("visibility", "visible");
+		$("#Cart-5").css("opacity", "1");
+	}, function() {
+		$("#Cart-5").css("visibility", "hidden");
+		$("#Cart-5").css("opacity", "0");
+	});
+
+	$("#box-6").hover(function() {
+		$("#Cart-6").css("visibility", "visible");
+		$("#Cart-6").css("opacity", "1");
+	}, function() {
+		$("#Cart-6").css("visibility", "hidden");
+		$("#Cart-6").css("opacity", "0");
+	});
+
 });
